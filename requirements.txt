@@ -1,0 +1,6 @@
+aiogram==3.3.0
+openai==2.24.0
+gspread==6.0.2
+google-auth==2.26.1
+python-dotenv==1.0.0
+pydantic==2.5.2
