@@ -1,5 +1,11 @@
-# Byte-compiled / optimized / DLL files
+.env
+google_service_account.json
 __pycache__/
+*.pyc
+credentials/google_service_account.json
+bot/__pycache__/
+
+# Byte-compiled / optimized / DLL files
 *.py[codz]
 *$py.class
 
@@ -135,7 +141,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
 .envrc
 .venv
 env/
