@@ -15,7 +15,7 @@
 
 - Python 3.11
 - aiogram 3.x
-- OpenAI API (GPT-3.5-turbo)
+- OpenAI API 
 - Google Sheets API (gspread)
 - Docker
 
@@ -73,3 +73,30 @@ docker-compose up --build
 
 ### Обоснование вопросов
 См. файл `QUESTIONS.md`.
+
+
+### Архитектура
+
+                    Candidate
+                       │
+                       ▼
+                Telegram Bot
+                       │
+                       ▼
+                   aiogram
+                       │
+                       ▼
+                Screening Logic
+                       │
+            ┌──────────┴──────────┐
+            ▼                     ▼
+         OpenAI              Google Sheets
+            │                     │
+            ▼                     ▼
+       AI Evaluation          Candidates DB
+            │
+            ▼
+        Hot Candidate
+            │
+            ▼
+        Admin Notification
